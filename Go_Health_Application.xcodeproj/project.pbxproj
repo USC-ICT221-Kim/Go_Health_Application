@@ -14,6 +14,7 @@
 		E3D84E0B2343659C007BFD94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3D84E092343659C007BFD94 /* LaunchScreen.storyboard */; };
 		E3D84E162343659C007BFD94 /* Go_Health_ApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D84E152343659C007BFD94 /* Go_Health_ApplicationTests.swift */; };
 		E3D84E212343659C007BFD94 /* Go_Health_ApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D84E202343659C007BFD94 /* Go_Health_ApplicationUITests.swift */; };
+		E3D84E2F234368F6007BFD94 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D84E2E234368F6007BFD94 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		E3D84E1C2343659C007BFD94 /* Go_Health_ApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Go_Health_ApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3D84E202343659C007BFD94 /* Go_Health_ApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Go_Health_ApplicationUITests.swift; sourceTree = "<group>"; };
 		E3D84E222343659C007BFD94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3D84E2E234368F6007BFD94 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				E3D84E002343659B007BFD94 /* AppDelegate.swift */,
 				E3D84E022343659B007BFD94 /* ViewController.swift */,
 				E3D84E042343659B007BFD94 /* Main.storyboard */,
+				E3D84E2E234368F6007BFD94 /* MapViewController.swift */,
 				E3D84E072343659C007BFD94 /* Assets.xcassets */,
 				E3D84E092343659C007BFD94 /* LaunchScreen.storyboard */,
 				E3D84E0C2343659C007BFD94 /* Info.plist */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3D84E032343659B007BFD94 /* ViewController.swift in Sources */,
+				E3D84E2F234368F6007BFD94 /* MapViewController.swift in Sources */,
 				E3D84E012343659B007BFD94 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
