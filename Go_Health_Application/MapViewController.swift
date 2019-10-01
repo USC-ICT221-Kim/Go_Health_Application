@@ -16,6 +16,9 @@ class MapViewController: UIViewController {
     
     let locationManager = CLLocationManager()
     
+    // Zoomed distance on Mapview
+    let regionInMeters: Double = 100000
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         checkLocationService()
@@ -29,7 +32,7 @@ class MapViewController: UIViewController {
     
     func centernViewOnUserLocation(){
         if  let location = locationManager.location?.coordinate{
-            let region = MKCoordinateRegion.init(center: location, latitudinalMeters: 10000, longitudinalMeters: 10000)
+            let region = MKCoordinateRegion.init(center: location, latitudinalMeters: regionInMeters, longitudinalMeters: regionInMeters)
             mapView.setRegion(region, animated: true)
         }
     }
@@ -50,6 +53,8 @@ class MapViewController: UIViewController {
             // Little Blue that
             // Which is user position
             mapView.showsUserLocation = true
+            centernViewOnUserLocation()
+            locationManager.startUpdatingLocation()
             break
         case .denied:
             
@@ -71,14 +76,19 @@ class MapViewController: UIViewController {
 extension MapViewController: CLLocationManagerDelegate{
     
     // Update User Location
+    // Can make history of location
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        // We will be back
+        
+        guard let location = locations.last else { return }
+        let center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+        let region = MKCoordinateRegion.init(center: center, latitudinalMeters: regionInMeters, longitudinalMeters: regionInMeters)
+        mapView.setRegion(region, animated: true)
         
     }
     
     // Change Authorization
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        // Late
+       checkLocationAuthorization()
     }
     
 }
