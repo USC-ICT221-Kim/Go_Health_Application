@@ -3,10 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09E11164D056CFBC0E6C6FE9 /* Pods_Go_Health_Application_Go_Health_ApplicationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D773D7E7FF889AD32FE7A96 /* Pods_Go_Health_Application_Go_Health_ApplicationUITests.framework */; };
+		48605A80776B3B3A620DC39E /* Pods_Go_Health_Application.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2954E4DCA6F80430844362F /* Pods_Go_Health_Application.framework */; };
+		ABEB10B2717C24C5B6931920 /* Pods_Go_Health_ApplicationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C18ADBC874CE5D41CE8197 /* Pods_Go_Health_ApplicationTests.framework */; };
+		E31D3C36234E496900603D18 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31D3C35234E496900603D18 /* HomeViewController.swift */; };
+		E31D3C39234E4A9200603D18 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31D3C38234E4A9200603D18 /* SignupViewController.swift */; };
+		E31D3C3B234E6A6300603D18 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31D3C3A234E6A6300603D18 /* Utilities.swift */; };
+		E3B696B3234E258A003985F7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3B696B2234E258A003985F7 /* GoogleService-Info.plist */; };
+		E3C831B6234E3D21009B8FDD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C831B5234E3D21009B8FDD /* LoginViewController.swift */; };
 		E3D84E012343659B007BFD94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D84E002343659B007BFD94 /* AppDelegate.swift */; };
 		E3D84E032343659B007BFD94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D84E022343659B007BFD94 /* ViewController.swift */; };
 		E3D84E062343659B007BFD94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3D84E042343659B007BFD94 /* Main.storyboard */; };
@@ -35,6 +43,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D773D7E7FF889AD32FE7A96 /* Pods_Go_Health_Application_Go_Health_ApplicationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Go_Health_Application_Go_Health_ApplicationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61F5738D9B3948E103884C50 /* Pods-Go_Health_Application.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Go_Health_Application.debug.xcconfig"; path = "Target Support Files/Pods-Go_Health_Application/Pods-Go_Health_Application.debug.xcconfig"; sourceTree = "<group>"; };
+		88C18ADBC874CE5D41CE8197 /* Pods_Go_Health_ApplicationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Go_Health_ApplicationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AAA4467D5BEB07891C8FE39 /* Pods-Go_Health_ApplicationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Go_Health_ApplicationTests.release.xcconfig"; path = "Target Support Files/Pods-Go_Health_ApplicationTests/Pods-Go_Health_ApplicationTests.release.xcconfig"; sourceTree = "<group>"; };
+		8BDA5AA02F6CAAC3996B6A74 /* Pods-Go_Health_Application-Go_Health_ApplicationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Go_Health_Application-Go_Health_ApplicationUITests.release.xcconfig"; path = "Target Support Files/Pods-Go_Health_Application-Go_Health_ApplicationUITests/Pods-Go_Health_Application-Go_Health_ApplicationUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AE95319490B87D4F31558B34 /* Pods-Go_Health_Application-Go_Health_ApplicationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Go_Health_Application-Go_Health_ApplicationUITests.debug.xcconfig"; path = "Target Support Files/Pods-Go_Health_Application-Go_Health_ApplicationUITests/Pods-Go_Health_Application-Go_Health_ApplicationUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B2954E4DCA6F80430844362F /* Pods_Go_Health_Application.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Go_Health_Application.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDE9C7BF69C86E80941B46E9 /* Pods-Go_Health_ApplicationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Go_Health_ApplicationTests.debug.xcconfig"; path = "Target Support Files/Pods-Go_Health_ApplicationTests/Pods-Go_Health_ApplicationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D00957BD34C6F915F21A84D6 /* Pods-Go_Health_Application.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Go_Health_Application.release.xcconfig"; path = "Target Support Files/Pods-Go_Health_Application/Pods-Go_Health_Application.release.xcconfig"; sourceTree = "<group>"; };
+		E31D3C35234E496900603D18 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E31D3C38234E4A9200603D18 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		E31D3C3A234E6A6300603D18 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		E3B696B2234E258A003985F7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E3C831B5234E3D21009B8FDD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E3D84DFD2343659B007BFD94 /* Go_Health_Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Go_Health_Application.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3D84E002343659B007BFD94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3D84E022343659B007BFD94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48605A80776B3B3A620DC39E /* Pods_Go_Health_Application.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABEB10B2717C24C5B6931920 /* Pods_Go_Health_ApplicationTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +94,55 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09E11164D056CFBC0E6C6FE9 /* Pods_Go_Health_Application_Go_Health_ApplicationUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0723AA686C99085B6C17D72A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61F5738D9B3948E103884C50 /* Pods-Go_Health_Application.debug.xcconfig */,
+				D00957BD34C6F915F21A84D6 /* Pods-Go_Health_Application.release.xcconfig */,
+				AE95319490B87D4F31558B34 /* Pods-Go_Health_Application-Go_Health_ApplicationUITests.debug.xcconfig */,
+				8BDA5AA02F6CAAC3996B6A74 /* Pods-Go_Health_Application-Go_Health_ApplicationUITests.release.xcconfig */,
+				BDE9C7BF69C86E80941B46E9 /* Pods-Go_Health_ApplicationTests.debug.xcconfig */,
+				8AAA4467D5BEB07891C8FE39 /* Pods-Go_Health_ApplicationTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4C24A231C70702DFF3140980 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2954E4DCA6F80430844362F /* Pods_Go_Health_Application.framework */,
+				1D773D7E7FF889AD32FE7A96 /* Pods_Go_Health_Application_Go_Health_ApplicationUITests.framework */,
+				88C18ADBC874CE5D41CE8197 /* Pods_Go_Health_ApplicationTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E31D3C37234E498100603D18 /* View_Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E3C831B5234E3D21009B8FDD /* LoginViewController.swift */,
+				E31D3C35234E496900603D18 /* HomeViewController.swift */,
+				E31D3C38234E4A9200603D18 /* SignupViewController.swift */,
+				E3D84E022343659B007BFD94 /* ViewController.swift */,
+			);
+			path = View_Controller;
+			sourceTree = "<group>";
+		};
+		E31D3C3C234E6A6B00603D18 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				E31D3C3A234E6A6300603D18 /* Utilities.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		E3D84DF42343659A007BFD94 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +150,8 @@
 				E3D84E142343659C007BFD94 /* Go_Health_ApplicationTests */,
 				E3D84E1F2343659C007BFD94 /* Go_Health_ApplicationUITests */,
 				E3D84DFE2343659B007BFD94 /* Products */,
+				0723AA686C99085B6C17D72A /* Pods */,
+				4C24A231C70702DFF3140980 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +168,14 @@
 		E3D84DFF2343659B007BFD94 /* Go_Health_Application */ = {
 			isa = PBXGroup;
 			children = (
-				E3D84E002343659B007BFD94 /* AppDelegate.swift */,
-				E3D84E022343659B007BFD94 /* ViewController.swift */,
-				E3D84E042343659B007BFD94 /* Main.storyboard */,
 				E3D84E2E234368F6007BFD94 /* MapViewController.swift */,
+				E31D3C37234E498100603D18 /* View_Controller */,
+				E31D3C3C234E6A6B00603D18 /* Helper */,
+				E3D84E002343659B007BFD94 /* AppDelegate.swift */,
+				E3D84E042343659B007BFD94 /* Main.storyboard */,
 				E3D84E072343659C007BFD94 /* Assets.xcassets */,
 				E3D84E092343659C007BFD94 /* LaunchScreen.storyboard */,
+				E3B696B2234E258A003985F7 /* GoogleService-Info.plist */,
 				E3D84E0C2343659C007BFD94 /* Info.plist */,
 			);
 			path = Go_Health_Application;
@@ -135,9 +206,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E3D84E252343659C007BFD94 /* Build configuration list for PBXNativeTarget "Go_Health_Application" */;
 			buildPhases = (
+				9FAE41F5918ABE357A6D8485 /* [CP] Check Pods Manifest.lock */,
 				E3D84DF92343659B007BFD94 /* Sources */,
 				E3D84DFA2343659B007BFD94 /* Frameworks */,
 				E3D84DFB2343659B007BFD94 /* Resources */,
+				BA24F0F7C41994A9F9A4E571 /* [CP] Embed Pods Frameworks */,
+				36C6AA67FE714F078A873134 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,6 +226,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E3D84E282343659C007BFD94 /* Build configuration list for PBXNativeTarget "Go_Health_ApplicationTests" */;
 			buildPhases = (
+				83F2D9E9FB8304FBB7F95D7F /* [CP] Check Pods Manifest.lock */,
 				E3D84E0D2343659C007BFD94 /* Sources */,
 				E3D84E0E2343659C007BFD94 /* Frameworks */,
 				E3D84E0F2343659C007BFD94 /* Resources */,
@@ -170,9 +245,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E3D84E2B2343659C007BFD94 /* Build configuration list for PBXNativeTarget "Go_Health_ApplicationUITests" */;
 			buildPhases = (
+				329220DA665954A9AA96C3D1 /* [CP] Check Pods Manifest.lock */,
 				E3D84E182343659C007BFD94 /* Sources */,
 				E3D84E192343659C007BFD94 /* Frameworks */,
 				E3D84E1A2343659C007BFD94 /* Resources */,
+				2928082503F0213574EDD303 /* [CP] Embed Pods Frameworks */,
+				0658E801D0F1944DD6E1086D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3D84E0B2343659C007BFD94 /* LaunchScreen.storyboard in Resources */,
+				E3B696B3234E258A003985F7 /* GoogleService-Info.plist in Resources */,
 				E3D84E082343659C007BFD94 /* Assets.xcassets in Resources */,
 				E3D84E062343659B007BFD94 /* Main.storyboard in Resources */,
 			);
@@ -254,11 +333,152 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0658E801D0F1944DD6E1086D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Go_Health_Application-Go_Health_ApplicationUITests/Pods-Go_Health_Application-Go_Health_ApplicationUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Go_Health_Application-Go_Health_ApplicationUITests/Pods-Go_Health_Application-Go_Health_ApplicationUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Go_Health_Application-Go_Health_ApplicationUITests/Pods-Go_Health_Application-Go_Health_ApplicationUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2928082503F0213574EDD303 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Go_Health_Application-Go_Health_ApplicationUITests/Pods-Go_Health_Application-Go_Health_ApplicationUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Go_Health_Application-Go_Health_ApplicationUITests/Pods-Go_Health_Application-Go_Health_ApplicationUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Go_Health_Application-Go_Health_ApplicationUITests/Pods-Go_Health_Application-Go_Health_ApplicationUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		329220DA665954A9AA96C3D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Go_Health_Application-Go_Health_ApplicationUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36C6AA67FE714F078A873134 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Go_Health_Application/Pods-Go_Health_Application-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Go_Health_Application/Pods-Go_Health_Application-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Go_Health_Application/Pods-Go_Health_Application-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83F2D9E9FB8304FBB7F95D7F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Go_Health_ApplicationTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FAE41F5918ABE357A6D8485 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Go_Health_Application-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA24F0F7C41994A9F9A4E571 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Go_Health_Application/Pods-Go_Health_Application-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Go_Health_Application/Pods-Go_Health_Application-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Go_Health_Application/Pods-Go_Health_Application-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E3D84DF92343659B007BFD94 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E31D3C39234E4A9200603D18 /* SignupViewController.swift in Sources */,
+				E31D3C36234E496900603D18 /* HomeViewController.swift in Sources */,
+				E31D3C3B234E6A6300603D18 /* Utilities.swift in Sources */,
+				E3C831B6234E3D21009B8FDD /* LoginViewController.swift in Sources */,
 				E3D84E032343659B007BFD94 /* ViewController.swift in Sources */,
 				E3D84E2F234368F6007BFD94 /* MapViewController.swift in Sources */,
 				E3D84E012343659B007BFD94 /* AppDelegate.swift in Sources */,
@@ -434,6 +654,7 @@
 		};
 		E3D84E262343659C007BFD94 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61F5738D9B3948E103884C50 /* Pods-Go_Health_Application.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +673,7 @@
 		};
 		E3D84E272343659C007BFD94 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D00957BD34C6F915F21A84D6 /* Pods-Go_Health_Application.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -470,6 +692,7 @@
 		};
 		E3D84E292343659C007BFD94 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDE9C7BF69C86E80941B46E9 /* Pods-Go_Health_ApplicationTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +714,7 @@
 		};
 		E3D84E2A2343659C007BFD94 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AAA4467D5BEB07891C8FE39 /* Pods-Go_Health_ApplicationTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +736,7 @@
 		};
 		E3D84E2C2343659C007BFD94 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE95319490B87D4F31558B34 /* Pods-Go_Health_Application-Go_Health_ApplicationUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +757,7 @@
 		};
 		E3D84E2D2343659C007BFD94 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BDA5AA02F6CAAC3996B6A74 /* Pods-Go_Health_Application-Go_Health_ApplicationUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

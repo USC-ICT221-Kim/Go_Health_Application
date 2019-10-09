@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>715929192104-4o3dha48q6vnefekv2523e9imfp0pila.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.715929192104-4o3dha48q6vnefekv2523e9imfp0pila</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCguHJTDGdxe6gw-u-QuzrZO6OW5bpowCg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>715929192104</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.mycompany.ios.MyApp.Go-Health-Application</string>
+	<key>PROJECT_ID</key>
+	<string>go-health-application</string>
+	<key>STORAGE_BUCKET</key>
+	<string>go-health-application.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:715929192104:ios:fb60f523f7d6f16965249d</string>
+	<key>DATABASE_URL</key>
+	<string>https://go-health-application.firebaseio.com</string>
+</dict>
+</plist>

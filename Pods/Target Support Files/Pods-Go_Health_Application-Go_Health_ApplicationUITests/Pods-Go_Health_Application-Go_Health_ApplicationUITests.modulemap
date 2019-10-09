@@ -1,0 +1,6 @@
+framework module Pods_Go_Health_Application_Go_Health_ApplicationUITests {
+  umbrella header "Pods-Go_Health_Application-Go_Health_ApplicationUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
