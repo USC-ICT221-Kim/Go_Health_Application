@@ -1,22 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
+   uuid = "4AF759B3-22F8-46E1-86AE-0A2D8443E316"
    type = "0"
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            uuid = "B0126201-FF7C-44B6-844F-5B4091C4997B"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Go_Health_Application/View_Controller/SignupViewController.swift"
-            timestampString = "592338289.023591"
+            timestampString = "592376967.177815"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "SignupViewController"
-            landmarkType = "3">
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "B0126201-FF7C-44B6-844F-5B4091C4997B - ed7783dfe651089a"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Go_Health_Application.SignupViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Go_Health_Application.SignupViewController"
+                  moduleName = "Go_Health_Application"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/donghyunkim/Documents/Go_Health_Application/Go_Health_Application/View_Controller/SignupViewController.swift"
+                  timestampString = "592343037.538438"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "217">
+               </Location>
+               <Location
+                  uuid = "B0126201-FF7C-44B6-844F-5B4091C4997B - 17585d5f50e25060"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Go_Health_Application.SignupViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Go_Health_Application.SignupViewController&gt;"
+                  moduleName = "Go_Health_Application"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/donghyunkim/Documents/Go_Health_Application/Go_Health_Application/View_Controller/SignupViewController.swift"
+                  timestampString = "592343037.54132"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "137">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

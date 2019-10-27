@@ -9,6 +9,9 @@ target 'Go_Health_Application' do
   
     pod 'Firebase/Core'
     pod 'FirebaseUI/Auth'
+    pod 'Firebase/Analytics'
+    pod 'Firebase/Firestore'
+    pod 'Firebase/Database'
   
   target 'Go_Health_ApplicationTests' do
     inherit! :search_paths
