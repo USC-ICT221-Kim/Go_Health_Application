@@ -16,6 +16,7 @@ import CoreLocation
 
 class MapViewController: UIViewController {
 
+    
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var addressLabel: UILabel!
     
@@ -24,6 +25,7 @@ class MapViewController: UIViewController {
     // Zoomed distance on Mapview
     let regionInMeters: Double = 10000
     var previousLocation: CLLocation?
+    var directionsArray: [MKDirections] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,6 +73,80 @@ class MapViewController: UIViewController {
     
 }
     
+    func getDirection(){
+        guard let location = locationManager.location?.coordinate else {
+            // Todo: Inform user we do not have their current location
+            return
+        }
+        
+        let request = createDirectionRequest(from: location)
+        let directions = MKDirections(request: request)
+        resetMapView(withNew: directions)
+        
+        // Draw route
+        directions.calculate { [unowned self] (response, error) in
+            guard let response = response else { return }
+            
+            for route in response.routes {
+//                self.mapView.addOverlay(route.polyline)
+//                self.mapView.setVisibleMapRect(route.polyline.boundingMapRect, animated: true)
+                let etaTravelTime = route.expectedTravelTime
+                print("Estimated Time (in mins): " , etaTravelTime / 60)
+//                print("Draw the route")
+            }
+        }
+    }
+//
+//    func getEstimatedTime(){
+//        guard let location = locationManager.location?.coordinate else {
+//            // Todo: Inform user we do not have their current location
+//            return
+//        }
+//
+//        let request = createDirectionRequest(from: location)
+//        let directions = MKDirections(request: request)
+//
+//            //Calculate estimated time
+//             directions.calculate { (response, error) in
+//                 guard error == nil, let response = response else { return }
+//
+//                 for route in response.routes{
+//                     let etaTravelTime = route.expectedTravelTime
+//                     print("Estimated Time : " , etaTravelTime / 60)
+//                 }
+//             }
+//    }
+    
+    // Get location
+    func createDirectionRequest(from coordinate: CLLocationCoordinate2D) -> MKDirections.Request{
+        
+        let destinationCoordinate = getCurrentLocation(for: mapView).coordinate
+        // user current location
+        let startingLocation = MKPlacemark(coordinate: coordinate)
+        // Center location
+        let destination = MKPlacemark(coordinate: destinationCoordinate)
+        
+        let request = MKDirections.Request()
+        request.source = MKMapItem(placemark: startingLocation)
+        request.destination = MKMapItem(placemark: destination)
+        request.transportType = .walking
+        request.requestsAlternateRoutes = true
+        
+        return request
+    }
+
+    func resetMapView(withNew directions: MKDirections) {
+           mapView.removeOverlays(mapView.overlays)
+           directionsArray.append(directions)
+           let _ = directionsArray.map { $0.cancel() }
+       }
+       
+    
+    // A button allows to user to move to the direction
+    @IBAction func getDirectionButtonTapped(_ sender: Any) {
+        getDirection()
+        print("Button Clicked")
+    }
     // Make it simple to read and understand
     func startTracingUserLocation(){
         // Little Blue that
@@ -145,6 +221,14 @@ extension MapViewController: MKMapViewDelegate{
             
         }
     }
+    
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer{
+        let renderer = MKPolylineRenderer(overlay: overlay as! MKPolyline)
+        renderer.strokeColor = .green
+        
+        return renderer
+    }
+    
 }
 
 
