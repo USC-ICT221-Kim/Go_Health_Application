@@ -27,6 +27,13 @@ class MapViewController: UIViewController {
     var previousLocation: CLLocation?
     var directionsArray: [MKDirections] = []
     
+    var calorieBurnRate: Double = 1000
+    var newHeartrate: Double = 10
+    var weightInPounds: Double = 39
+    var userAge: Double = 20
+    var Men: Double = 17.8
+    var Women: Double = 16.9
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         checkLocationService()
@@ -88,34 +95,23 @@ class MapViewController: UIViewController {
             guard let response = response else { return }
             
             for route in response.routes {
-//                self.mapView.addOverlay(route.polyline)
-//                self.mapView.setVisibleMapRect(route.polyline.boundingMapRect, animated: true)
-                let etaTravelTime = route.expectedTravelTime
-                print("Estimated Time (in mins): " , etaTravelTime / 60)
+                self.mapView.addOverlay(route.polyline)
+                self.mapView.setVisibleMapRect(route.polyline.boundingMapRect, animated: true)
+                // Calculate ETA Time
+//                let etaTravelTime = route.expectedTravelTime
+//                print("Estimated Time (in mins): " , etaTravelTime / 60)
 //                print("Draw the route")
             }
         }
     }
-//
-//    func getEstimatedTime(){
-//        guard let location = locationManager.location?.coordinate else {
-//            // Todo: Inform user we do not have their current location
-//            return
-//        }
-//
-//        let request = createDirectionRequest(from: location)
-//        let directions = MKDirections(request: request)
-//
-//            //Calculate estimated time
-//             directions.calculate { (response, error) in
-//                 guard error == nil, let response = response else { return }
-//
-//                 for route in response.routes{
-//                     let etaTravelTime = route.expectedTravelTime
-//                     print("Estimated Time : " , etaTravelTime / 60)
-//                 }
-//             }
-//    }
+
+    // Calulation equation to findout burned calories
+    func  calculateCalories(){
+        Men; calorieBurnRate = abs(((0.6309, newHeartrate) + (0.09036, weightInPounds) + (0.2017 * userAge) - 55.0969) / 4.184);
+
+        Women; calorieBurnRate = abs(((0.4472, newHeartrate) - (0.05741, weightInPounds) + (0.074 * userAge) - 20.4022) / 4.184);
+    }
+    
     
     // Get location
     func createDirectionRequest(from coordinate: CLLocationCoordinate2D) -> MKDirections.Request{
